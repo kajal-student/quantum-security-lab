@@ -1,0 +1,9 @@
+streamlit>=1.32.0
+qiskit>=1.1.0
+qiskit-aer>=0.14.0
+plotly>=5.20.0
+matplotlib>=3.8.0
+numpy>=1.26.0
+pandas>=2.1.0
+pylatexenc>=2.10
+pillow>=10.1.0
