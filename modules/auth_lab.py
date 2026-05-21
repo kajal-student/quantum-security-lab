@@ -100,8 +100,7 @@ def _signup_panel() -> None:
             "password_hash": hash_password(password),
             "created_at": time.time(),
         }
-        st.success(f"Account '{username}' created. You can now log in.")
-        st.session_state.qa_view = "login"
+        st.toast(f"Account '{username}' created. Switch to the Login tab.", icon="✅")
         st.rerun()
 
 

@@ -265,16 +265,3 @@ Current quantum hardware (NISQ era — Noisy Intermediate-Scale Quantum) suffers
 *This simulation uses Qiskit Aer's noise models to approximate real hardware behavior.*
         """)
 
-    with st.expander("📖 Interview notes — noise simulation"):
-        st.markdown("""
-**What to say about quantum noise in an interview:**
-
-- *"I implemented three noise models in Qiskit Aer: depolarizing, bit flip, and phase flip."*
-- *"I quantified noise impact using Total Variation Distance — a clean metric between probability distributions."*
-- *"This demonstrates I understand the NISQ era constraint: current quantum devices can't run deep circuits without error mitigation."*
-
-**Key concepts:**
-- NISQ = Noisy Intermediate-Scale Quantum (the current era of ~50–500 qubit devices)
-- Gate fidelity ~99–99.9% per gate; a 100-gate circuit accumulates substantial error
-- Quantum error correction exists but requires ~1000 physical qubits per logical qubit
-        """)

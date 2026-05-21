@@ -363,18 +363,3 @@ the bars closely match theory. This is exactly what quantum hardware demonstrate
         for name, info in _GATES.items():
             _gate_card(name, info)
 
-        with st.expander("📖 Interview notes — gates"):
-            st.markdown("""
-**What to say about quantum gates in an interview:**
-
-- *"Quantum gates are unitary matrices — they preserve probability (|α|² + |β|² = 1)."*
-- *"Single-qubit gates rotate the Bloch sphere. Hadamard rotates around the X+Z diagonal."*
-- *"CNOT is the minimal entangling operation — it's why quantum computers need 2-qubit gates."*
-- *"H + CNOT is enough for a universal quantum computer (with some caveats about phase gates)."*
-
-**Key numbers to remember:**
-- H applied to |0⟩ → 50/50 superposition
-- Two H gates → identity (H² = I)
-- Bell state: H on qubit 0, then CNOT → |00⟩ + |11⟩ (maximally entangled)
-- CNOT truth table: |control, target⟩ → |control, target ⊕ control⟩
-            """)

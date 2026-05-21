@@ -372,22 +372,3 @@ def render_circuit_playground() -> None:
         ]
         st.dataframe(pd.DataFrame(rows), use_container_width=True, hide_index=True)
 
-    with st.expander("📖 Interview notes — circuit simulation"):
-        st.markdown("""
-**What to say about this module:**
-
-- *"I built an interactive quantum circuit simulator backed by Qiskit's Aer statevector/QASM engine."*
-- *"Users compose circuits from H, X, Y, Z, and CNOT gates and observe real probability distributions."*
-- *"I implemented a gate knowledge panel that shows the matrix, action, and use cases for each selected gate."*
-
-**Key concepts to know:**
-- Quantum circuits apply unitary matrices sequentially — order matters
-- H then CNOT creates a Bell state (maximally entangled 2-qubit state)
-- More shots → smoother probability distribution → lower statistical noise
-- Born rule: the probability of each outcome equals |amplitude|²
-- The barrier gate is cosmetic — it doesn't affect the quantum state
-
-**Expected interview follow-ups:**
-- "What's the difference between statevector and QASM simulation?" (statevector: exact amplitudes; QASM: samples/shots)
-- "Can this run on real hardware?" (Yes, via IBMQ — replace AerSimulator with IBMQBackend)
-        """)
